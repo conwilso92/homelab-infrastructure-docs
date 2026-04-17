@@ -55,9 +55,9 @@ This documentation focuses on:
 
 ## Documentation Index
 
-- [`docs/truenas-setup.md`](docs/truenas-setup.md)
-- [`docs/remote-access.md`](docs/remote-access.md)
-- [`docs/troubleshooting-notes.md`](docs/troubleshooting-notes.md)
+- [TrueNAS Setup](docs/truenas-setup.md)
+- [Remote Access](docs/remote-access.md)
+- [Troubleshooting Notes](docs/troubleshooting-notes.md)
 
 ## Key Lessons So Far
 
@@ -75,4 +75,5 @@ Planned future additions:
 - network diagram
 - storage layout documentation
 - service-by-service application notes
-- cybersecurity lab documentation for Kali Linux and pfSense
+- cybersecurity lab documentation for Kali Linux
+- mini-rack network upgrade to expand the lab with OPNsense routing, Pi-hole and Unbound for DNS services, a Ubiquiti 10Gb managed switch for improved local transfer speeds, and a UniFi access point for wireless coverage
