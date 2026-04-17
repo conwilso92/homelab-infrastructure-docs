@@ -41,6 +41,8 @@ Rather than treating the lab as just a media server, I use it as a platform for 
 - **Jellyseerr** — media request and discovery portal
 - **Tailscale** — mesh VPN for secure remote access
 - **Cloudflare Tunnel** — reverse tunnel for external service access without port forwarding
+- **Immich** — self-hosted photo and video management platform for automatic mobile backups and private cloud access
+
 
 ## What This Repository Covers
 
