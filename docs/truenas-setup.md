@@ -33,6 +33,9 @@ tank/
 ├── downloads/
 │   ├── complete/
 │   └── incomplete/
+├── immich/
+│   ├── library/
+│   └── postgres/
 └── apps/
 ```
 
