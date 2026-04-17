@@ -66,6 +66,7 @@ This documentation focuses on:
 - Stable IP planning matters, and DHCP reservation can be cleaner than fully static addressing in a home environment
 - Remote access should be designed intentionally instead of exposing services directly
 - Troubleshooting works best when isolating one variable at a time
+- Layered troubleshooting matters when problem solving multiple overlapping issues
 
 ## In Progress
 
