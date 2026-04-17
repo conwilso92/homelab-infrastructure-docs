@@ -6,7 +6,11 @@ This document summarizes the core TrueNAS setup for my homelab environment, incl
 
 ## Initial Setup
 
+The system uses an Intel Core i3 processor with Quick Sync support, which helps handle media transcoding while also supporting TrueNAS and containerized services.
+
 Installed TrueNAS Community Edition on a dedicated 1TB NVMe boot drive, separate from the storage pool. The boot drive is larger than necessary for TrueNAS, but it was what I had available at the time. Keeping the OS drive independent from the data pool ensures that a storage drive failure doesn't take down the operating system.
+
+The system is configured with 64GB of DDR4 RAM to support TrueNAS, ZFS, and multiple containerized services while leaving room for future expansion.
 
 ## Storage Configuration
 
