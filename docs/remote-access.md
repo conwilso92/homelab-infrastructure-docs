@@ -6,7 +6,7 @@ This document covers how remote access is handled in my homelab and why I chose 
 
 ## Network Diagram
 
-![Network Diagram](images/network-diagram.svg)
+![Network Diagram](images/network-diagrams.svg)
 
 ## Design Decisions
 
