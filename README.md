@@ -26,6 +26,7 @@ Rather than treating the lab as just a media server, I use it as a platform for 
 
 ### Core Platform
 - **OS:** TrueNAS Community Edition (formerly SCALE) — Linux-based (Debian)
+- **CPU:** Intel i3 (Raptor Lake, Quick Sync capable)
 - **Storage:** ZFS RAIDZ1
 - **Pool:** `tank`
 - **Drive Layout:** 3 × 20TB IronWolf Pro drives (~40TB usable after parity)
