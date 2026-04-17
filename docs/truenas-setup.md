@@ -16,6 +16,8 @@ Installed TrueNAS Community Edition on a dedicated 1TB NVMe boot drive, separate
 - **Drives:** 3 × 20TB IronWolf Pro
 - **Usable design goal:** balance of high-capacity storage with single-drive fault tolerance
 
+![TrueNAS Storage Pool](..images/storage-pool.png)
+
 ### Why RAIDZ1
 I chose RAIDZ1 as a balance between usable capacity and redundancy. The main goal of this build was to support large media storage and self-hosted services while still maintaining protection against a single drive failure.
 
