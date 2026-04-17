@@ -4,6 +4,10 @@
 
 This document covers how remote access is handled in my homelab and why I chose to use secure overlay and tunnel-based access rather than exposing services directly.
 
+## Network Diagram
+
+![Network Diagram](images/network-diagram.svg)
+
 ## Design Decisions
 
 No ports are forwarded on the router. All remote access goes through encrypted overlays or tunnels, reducing the attack surface of the homelab. This was an intentional choice — I wanted to learn how to provide remote connectivity without exposing internal infrastructure directly to the internet.
