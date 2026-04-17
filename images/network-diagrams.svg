@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 680" font-family="Consolas, 'Courier New', monospace">
+  <defs>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="108%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f1923"/>
+      <stop offset="100%" style="stop-color:#1a2a3a"/>
+    </linearGradient>
+    <linearGradient id="deviceGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5c"/>
+      <stop offset="100%" style="stop-color:#162a42"/>
+    </linearGradient>
+    <linearGradient id="serverGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a4a3a"/>
+      <stop offset="100%" style="stop-color:#12332a"/>
+    </linearGradient>
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3a2a5c"/>
+      <stop offset="100%" style="stop-color:#2a1a42"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="680" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Title -->
+  <text x="480" y="38" text-anchor="middle" fill="#8ab4d6" font-size="18" font-weight="bold" letter-spacing="2">HOMELAB NETWORK — CURRENT SETUP</text>
+  <line x1="180" y1="52" x2="780" y2="52" stroke="#2a4a6a" stroke-width="1"/>
+
+  <!-- Legend -->
+  <rect x="30" y="68" width="175" height="85" rx="6" fill="#0f1923" stroke="#2a4a6a" stroke-width="1" opacity="0.9"/>
+  <text x="118" y="86" text-anchor="middle" fill="#6a8aaa" font-size="10" font-weight="bold">LEGEND</text>
+  <line x1="46" y1="100" x2="80" y2="100" stroke="#3a82c4" stroke-width="2"/>
+  <text x="88" y="104" fill="#5a8ab0" font-size="9">Wired Connection</text>
+  <line x1="46" y1="118" x2="80" y2="118" stroke="#4a6a8a" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="88" y="122" fill="#5a8ab0" font-size="9">WAN / Logical Link</text>
+  <line x1="46" y1="136" x2="80" y2="136" stroke="#7a6aaa" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="88" y="140" fill="#5a8ab0" font-size="9">Overlay / Tunnel</text>
+
+  <!-- INTERNET CLOUD -->
+  <ellipse cx="480" cy="115" rx="100" ry="38" fill="url(#cloudGrad)" stroke="#6a5acd" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="480" y="120" text-anchor="middle" fill="#b8a9e8" font-size="14" font-weight="bold">INTERNET</text>
+
+  <!-- Connection: Internet to Gateway -->
+  <line x1="480" y1="153" x2="480" y2="200" stroke="#4a6a8a" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="490" y="182" fill="#5a8ab0" font-size="9">AT&amp;T Fiber</text>
+
+  <!-- ATT GATEWAY -->
+  <rect x="350" y="200" width="260" height="60" rx="8" fill="url(#deviceGrad)" stroke="#3a6a9a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="480" y="225" text-anchor="middle" fill="#8ab4d6" font-size="14" font-weight="bold">AT&amp;T Fiber Gateway</text>
+  <text x="480" y="245" text-anchor="middle" fill="#5a8ab0" font-size="10">Bridge Mode (IP Passthrough)</text>
+
+  <!-- Connection: Gateway to Router -->
+  <line x1="480" y1="260" x2="480" y2="315" stroke="#3a82c4" stroke-width="2.5"/>
+  <text x="490" y="293" fill="#5a8ab0" font-size="9">WAN Port</text>
+
+  <!-- TP-LINK ROUTER -->
+  <rect x="345" y="315" width="270" height="60" rx="8" fill="url(#deviceGrad)" stroke="#3a82c4" stroke-width="2" filter="url(#shadow)"/>
+  <text x="480" y="340" text-anchor="middle" fill="#8ab4d6" font-size="14" font-weight="bold">TP-Link Router</text>
+  <text x="480" y="358" text-anchor="middle" fill="#5a8ab0" font-size="10">DHCP Server · Wi-Fi · LAN Gateway</text>
+
+  <!-- Wi-Fi indicator -->
+  <path d="M 610 320 Q 632 304 654 320" fill="none" stroke="#5aaa7a" stroke-width="1.5" opacity="0.5"/>
+  <path d="M 616 326 Q 632 313 648 326" fill="none" stroke="#5aaa7a" stroke-width="1.5" opacity="0.7"/>
+  <path d="M 622 332 Q 632 323 642 332" fill="none" stroke="#5aaa7a" stroke-width="1.5"/>
+  <circle cx="632" cy="335" r="2" fill="#5aaa7a"/>
+
+  <!-- CONNECTION LINES from Router -->
+  <line x1="400" y1="375" x2="185" y2="465" stroke="#3a82c4" stroke-width="2"/>
+  <line x1="480" y1="375" x2="480" y2="465" stroke="#3a82c4" stroke-width="2"/>
+  <line x1="560" y1="375" x2="775" y2="465" stroke="#3a82c4" stroke-width="2"/>
+
+  <!-- Labels on connections -->
+  <text x="278" y="418" fill="#5a8ab0" font-size="9" transform="rotate(-22, 278, 418)">Ethernet</text>
+  <text x="490" y="428" fill="#5a8ab0" font-size="9">Ethernet</text>
+  <text x="665" y="418" fill="#5a8ab0" font-size="9" transform="rotate(22, 665, 418)">Ethernet / Wi-Fi</text>
+
+  <!-- DESKTOP PC -->
+  <rect x="55" y="465" width="260" height="75" rx="8" fill="url(#deviceGrad)" stroke="#3a6a9a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="185" y="490" text-anchor="middle" fill="#8ab4d6" font-size="13" font-weight="bold">Desktop (Lab PC)</text>
+  <text x="185" y="508" text-anchor="middle" fill="#5a8ab0" font-size="9">Ryzen 7 7800X3D · RTX 5080</text>
+  <text x="185" y="524" text-anchor="middle" fill="#5a8ab0" font-size="9">Kali Linux VM · Cybersecurity Lab</text>
+
+  <!-- TRUENAS SERVER -->
+  <rect x="340" y="465" width="280" height="75" rx="8" fill="url(#serverGrad)" stroke="#3aaa6a" stroke-width="2" filter="url(#shadow)"/>
+  <text x="480" y="490" text-anchor="middle" fill="#7ad4a8" font-size="13" font-weight="bold">TrueNAS Server</text>
+  <text x="480" y="508" text-anchor="middle" fill="#5aaa7a" font-size="9">Community Edition (Debian) · 1TB NVMe Boot</text>
+  <text x="480" y="524" text-anchor="middle" fill="#5aaa7a" font-size="9">3×20TB IronWolf Pro RAIDZ1 · ~40TB Usable</text>
+
+  <!-- LAPTOP -->
+  <rect x="645" y="465" width="260" height="75" rx="8" fill="url(#deviceGrad)" stroke="#3a6a9a" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="775" y="490" text-anchor="middle" fill="#8ab4d6" font-size="13" font-weight="bold">Laptop</text>
+  <text x="775" y="508" text-anchor="middle" fill="#5a8ab0" font-size="9">Wired (docked) or Wi-Fi</text>
+  <text x="775" y="524" text-anchor="middle" fill="#5a8ab0" font-size="9">Kali Linux VM</text>
+
+  <!-- SERVICES on TrueNAS -->
+  <rect x="320" y="575" width="320" height="65" rx="8" fill="#121f2d" stroke="#2a4a6a" stroke-width="1" filter="url(#shadow)"/>
+  <text x="480" y="598" text-anchor="middle" fill="#6a8aaa" font-size="11" font-weight="bold">Containerized Services</text>
+  <text x="480" y="616" text-anchor="middle" fill="#4a7090" font-size="9">Emby · Radarr · Sonarr · NZBGet · Jellyseerr · Immich</text>
+  <text x="480" y="632" text-anchor="middle" fill="#4a7090" font-size="9">Tailscale · Cloudflare Tunnel</text>
+  <line x1="480" y1="540" x2="480" y2="575" stroke="#2a5a4a" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- OVERLAY: Tailscale -->
+  <rect x="20" y="582" width="260" height="58" rx="8" fill="#1a1a2e" stroke="#6a5acd" stroke-width="1.5" stroke-dasharray="5,3" filter="url(#shadow)"/>
+  <text x="150" y="605" text-anchor="middle" fill="#8a8ad4" font-size="11" font-weight="bold">Tailscale (Mesh VPN)</text>
+  <text x="150" y="623" text-anchor="middle" fill="#6a6aaa" font-size="9">Private admin access from anywhere</text>
+
+  <!-- OVERLAY: Cloudflare -->
+  <rect x="680" y="582" width="260" height="58" rx="8" fill="#1a1a2e" stroke="#d4862a" stroke-width="1.5" stroke-dasharray="5,3" filter="url(#shadow)"/>
+  <text x="810" y="605" text-anchor="middle" fill="#e8a84a" font-size="11" font-weight="bold">Cloudflare Tunnel</text>
+  <text x="810" y="623" text-anchor="middle" fill="#aa8a4a" font-size="9">External service access · Custom domain</text>
+
+  <!-- Dashed lines from overlays to server -->
+  <line x1="280" y1="595" x2="375" y2="540" stroke="#6a5acd" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="680" y1="595" x2="590" y2="540" stroke="#d4862a" stroke-width="1.5" stroke-dasharray="4,3"/>
+</svg>
