@@ -1,6 +1,7 @@
 # Troubleshooting Notes
 
 This page documents real problems encountered in the lab, along with the cause, fix, and lesson learned from each one. 
+
 #6 was by far the most involved and challenging to troubleshoot
 
 ---
