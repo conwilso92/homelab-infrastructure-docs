@@ -43,6 +43,8 @@ tank/
 
 One of the main goals in organizing storage this way was to avoid confusion when mapping host paths into containerized applications. Getting this right early prevented path-related issues that are common when multiple services need to access the same files.
 
+![TrueNAS datasets](../images/datasets.png)
+
 ## Network Configuration
 
 After installation, I decided to use a **DHCP reservation** for the server instead of manually assigning a static IP. The reservation is configured on the TP-Link router, which keeps IP management centralized at the router level rather than on individual devices.
@@ -56,6 +58,10 @@ This TrueNAS system serves as:
 - platform for containerized services
 - hands-on lab for learning system administration
 - environment for troubleshooting storage, networking, and service deployment issues
+
+## Running Services
+
+![TrueNAS apps list](../images/apps-list.png)
 
 ## Lessons Learned
 
