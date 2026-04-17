@@ -62,3 +62,4 @@ This TrueNAS system serves as:
 - Storage layout decisions affect app configuration later
 - Service deployment gets easier when folders and datasets are planned in advance
 - It is worth documenting path structure early to prevent avoidable app issues later
+- ZFS ACL type matters — NFSv4 ACLs can silently block container writes even when Unix permissions look correct
