@@ -29,6 +29,7 @@ Rather than treating the lab as just a media server, I use it as a platform for 
 - **Storage:** ZFS RAIDZ1
 - **Pool:** `tank`
 - **Drive Layout:** 3 × 20TB IronWolf Pro drives (~40TB usable after parity)
+- **Memory:** 64GB DDR4 RAM
 - **Primary Use Cases:** centralized storage, media services, infrastructure learning, remote access, containerized applications
 
 ### Networking and Remote Access
