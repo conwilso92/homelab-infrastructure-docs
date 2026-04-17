@@ -18,6 +18,10 @@ Rather than treating the lab as just a media server, I use it as a platform for 
 - Service mapping and file path consistency
 - Documentation of issues, fixes, and lessons learned
 
+## Dashboard Snapshot
+
+![TrueNAS dashboard](images/dashboard.png)
+
 ## Current Environment
 
 ### Core Platform
